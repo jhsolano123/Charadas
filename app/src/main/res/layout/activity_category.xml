@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="#1E88E5"
+    tools:context=".CategoryActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Juego de Charadas"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="64dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecciona una Categoría"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btn_category_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Cargando..."
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:backgroundTint="#FFC107"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:id="@+id/btn_category_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Cargando..."
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:backgroundTint="#FFC107"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:id="@+id/btn_category_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cargando..."
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:backgroundTint="#FFC107"
+        android:textColor="@android:color/black"/>
+
+</LinearLayout>

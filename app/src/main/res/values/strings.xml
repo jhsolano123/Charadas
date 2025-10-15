@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">CharadesApp</string>
+
+    <!-- Categorías -->
+    <string-array name="categorias">
+        <item>Animales</item>
+        <item>Películas</item>
+        <item>Profesiones</item>
+    </string-array>
+
+    <!-- Palabras de Animales -->
+    <string-array name="animales">
+        <item>Elefante</item>
+        <item>Jirafa</item>
+        <item>Pingüino</item>
+        <item>Mariposa</item>
+        <item>Cocodrilo</item>
+        <item>Canguro</item>
+        <item>Pulpo</item>
+        <item>Serpiente</item>
+        <item>Águila</item>
+        <item>Tiburón</item>
+    </string-array>
+
+    <!-- Palabras de Películas -->
+    <string-array name="peliculas">
+        <item>Titanic</item>
+        <item>El Rey León</item>
+        <item>Avatar</item>
+        <item>Frozen</item>
+        <item>Coco</item>
+        <item>Matrix</item>
+        <item>Star Wars</item>
+        <item>Harry Potter</item>
+        <item>Toy Story</item>
+        <item>Jurassic Park</item>
+    </string-array>
+
+    <!-- Palabras de Profesiones -->
+    <string-array name="profesiones">
+        <item>Médico</item>
+        <item>Bombero</item>
+        <item>Chef</item>
+        <item>Astronauta</item>
+        <item>Piloto</item>
+        <item>Pintor</item>
+        <item>Músico</item>
+        <item>Policía</item>
+        <item>Maestro</item>
+        <item>Fotógrafo</item>
+    </string-array>
+</resources>
