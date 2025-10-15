@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    tools:context=".GameActivity">
+
+    <TextView
+        android:id="@+id/tv_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01:00"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puntaje: 0"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_timer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_word"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cargando..."
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="20dp"
+        android:background="@drawable/background_word"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:id="@+id/btn_correct"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="¡Acierto!"
+        android:backgroundTint="#4CAF50"
+        app:layout_constraintBottom_toTopOf="@id/btn_skip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/btn_skip"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Saltar/Pasar"
+        android:backgroundTint="#FF9800"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

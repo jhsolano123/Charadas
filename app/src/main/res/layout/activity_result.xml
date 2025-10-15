@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="#E0F7FA"
+    tools:context=".ResultActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Juego Terminado!"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tu Puntaje Final es:"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_final_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="72sp"
+        android:textStyle="bold"
+        android:textColor="#009688"
+        android:layout_marginBottom="64dp"/>
+
+    <Button
+        android:id="@+id/btn_play_again"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jugar de Nuevo"
+        android:padding="16dp"
+        android:textSize="20sp"
+        android:backgroundTint="#00BCD4"/>
+
+</LinearLayout>
