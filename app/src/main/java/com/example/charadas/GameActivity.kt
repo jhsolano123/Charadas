@@ -1,13 +1,29 @@
+<<<<<<< HEAD
 package com.example.charadesapp
+=======
+package com.example.charadas
+>>>>>>> 92c91b6 (aca introdusco la pantalla de resultados y el juego como tal Recibe la categoría seleccionada de CategoryActivity,Obtiene las palabras,Baraja las palabras ,Inicia un temporizador,Muestra palabras una por una)
 
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.os.CountDownTimer
 import androidx.appcompat.app.AppCompatActivity
+<<<<<<< HEAD
 import com.example.charadesapp.data.DataSource
 import com.example.charadesapp.databinding.ActivityGameBinding
 import java.util.*
+=======
+import com.example.charadas.data.DataSource
+import com.example.charadas.databinding.ActivityGameBinding
+import java.util.*
+import kotlin.apply
+import kotlin.collections.isNotEmpty
+import kotlin.collections.shuffle
+import kotlin.collections.toMutableList
+import kotlin.jvm.java
+import kotlin.text.format
+>>>>>>> 92c91b6 (aca introdusco la pantalla de resultados y el juego como tal Recibe la categoría seleccionada de CategoryActivity,Obtiene las palabras,Baraja las palabras ,Inicia un temporizador,Muestra palabras una por una)
 
 class GameActivity : AppCompatActivity() {
 
@@ -94,7 +110,11 @@ class GameActivity : AppCompatActivity() {
         countDownTimer.cancel()
 
         val intent = Intent(this, ResultActivity::class.java).apply {
+<<<<<<< HEAD
             putExtra("EXTRA_SCORE", score)
+=======
+            Intent.putExtra("EXTRA_SCORE", score)
+>>>>>>> 92c91b6 (aca introdusco la pantalla de resultados y el juego como tal Recibe la categoría seleccionada de CategoryActivity,Obtiene las palabras,Baraja las palabras ,Inicia un temporizador,Muestra palabras una por una)
         }
         startActivity(intent)
         // Cierra esta Activity para que el usuario no pueda volver con el botón "Atrás"
