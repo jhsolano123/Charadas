@@ -4,8 +4,6 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.charadas.databinding.ActivityResultBinding
-import kotlin.apply
-import kotlin.jvm.java
 
 class ResultActivity : AppCompatActivity() {
 
@@ -25,11 +23,10 @@ class ResultActivity : AppCompatActivity() {
         // 3. Configura el botón para jugar de nuevo (Reiniciar)
         binding.btnPlayAgain.setOnClickListener {
             // Vuelve a la pantalla de categorías (inicio del juego)
-            val intent = Intent(this, CategoryActivity::class.java).apply {
-                // Esta bandera es crucial para borrar las Activities anteriores
-                // y empezar desde cero.
-                Intent.setFlags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK
-            }
+            val intent = Intent(this, CategoryActivity::class.java)
+            // Esta bandera es crucial para borrar las Activities anteriores
+            // y empezar desde cero.
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK
             startActivity(intent)
             finish() // Cierra la Activity de resultados
         }
