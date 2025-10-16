@@ -39,7 +39,7 @@ class CategoryActivity : AppCompatActivity() {
 
                 // 2. Asigna el listener al botón
                 button.setOnClickListener {
-                   /// startGame(categoryName)
+                    startGame(categoryName)
                 }
             } else {
                 // Oculta botones si no hay suficientes categorías en el DataSource
@@ -51,11 +51,11 @@ class CategoryActivity : AppCompatActivity() {
     /**
      * Lanza la GameActivity y le pasa la categoría seleccionada como un 'Extra'.
      */
-/**private fun startGame(category: String) {
+private fun startGame(category: String) {
         val intent = Intent(this, GameActivity::class.java).apply {
             // El String "EXTRA_CATEGORY" será la clave para recuperar el valor
             putExtra("EXTRA_CATEGORY", category)
         }
         startActivity(intent)
-    }*/
+    }
 }
